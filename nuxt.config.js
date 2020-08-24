@@ -2,8 +2,10 @@
  * @Author: wupeiwen <javapeiwen2010@gmail.com>
  * @Date: 2020-08-10 16:53:52
  * @LastEditors: wupeiwen <javapeiwen2010@gmail.com>
- * @LastEditTime: 2020-08-24 16:44:14
+ * @LastEditTime: 2020-08-24 17:32:34
  */
+require('dotenv').config()
+
 module.exports = {
   mode: 'universal',
   /*
@@ -67,5 +69,7 @@ module.exports = {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
-  }
+  },
+  // 不参与数据反馈计划
+  telemetry: false
 }
